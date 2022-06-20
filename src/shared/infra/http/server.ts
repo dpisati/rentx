@@ -2,12 +2,12 @@ import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import { router } from "./routes";
 
-import "./database";
-import "./shared/container";
+import { AppError } from "@shared/errors/AppError";
+import "@shared/infra/typeorm";
+import "@shared/container";
 
 import swaggerUi from "swagger-ui-express";
-import swaggerFile from "./swagger.json";
-import { AppError } from "./errors/AppError";
+import swaggerFile from "../../../swagger.json";
 
 const app = express();
 app.use(express.json());
@@ -24,7 +24,7 @@ app.use(
 
     return response.status(500).json({
       status: "error",
-      message: ` Internal server error: ${err.message}`,
+      message: `Internal server error: ${err.message}`,
     });
   }
 );
