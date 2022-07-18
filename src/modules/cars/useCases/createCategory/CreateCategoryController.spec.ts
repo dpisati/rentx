@@ -66,6 +66,6 @@ describe("CreateCategoryController.spec", () => {
         Authorization: `Bearer ${token}`,
       });
 
-    expect(response.statusCode).toBe(401);
+    expect(response.statusCode).toBe(400);
   });
 });
