@@ -33,7 +33,7 @@ describe("CreateCategoryController.spec", () => {
       password: "admin",
     });
 
-    const { token } = responseToken.body;
+    const { refresh_token } = responseToken.body;
 
     const response = await request(app)
       .post("/categories")
@@ -42,7 +42,7 @@ describe("CreateCategoryController.spec", () => {
         description: "Category test description",
       })
       .set({
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${refresh_token}`,
       });
 
     expect(response.statusCode).toBe(201);
@@ -54,7 +54,7 @@ describe("CreateCategoryController.spec", () => {
       password: "admin",
     });
 
-    const { token } = responseToken.body;
+    const { refresh_token } = responseToken.body;
 
     const response = await request(app)
       .post("/categories")
@@ -63,7 +63,7 @@ describe("CreateCategoryController.spec", () => {
         description: "Category test description",
       })
       .set({
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${refresh_token}`,
       });
 
     expect(response.statusCode).toBe(400);
