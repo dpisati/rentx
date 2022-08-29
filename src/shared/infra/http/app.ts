@@ -1,7 +1,7 @@
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import { router } from "./routes";
-
+import "dotenv/config";
 import { AppError } from "@shared/errors/AppError";
 
 import createConnection from "@shared/infra/typeorm";
