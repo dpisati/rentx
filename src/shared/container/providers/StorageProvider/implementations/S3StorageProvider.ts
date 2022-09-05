@@ -7,25 +7,26 @@ import upload from "@config/upload";
 
 import { IStorageProvider } from "../IStorageProvider";
 
+const region = process.env.AWS_BUCKET_REGION;
+const bucketName = process.env.AWS_BUCKET;
+
 class S3StorageProvider implements IStorageProvider {
   private client: S3;
 
   constructor() {
     this.client = new S3({
-      region: process.env.AWS_BUCKET_REGION,
+      region,
     });
   }
 
   async save(file: string, folder: string): Promise<string> {
     const originalName = resolve(upload.tmpFolder, file);
-
     const fileContent = await fs.promises.readFile(originalName);
-
     const ContentType = mime.getType(originalName);
 
     await this.client
       .putObject({
-        Bucket: `${process.env.AWS_BUCKET}/${folder}`,
+        Bucket: `${bucketName}/${folder}`,
         Key: file,
         ACL: "public-read",
         Body: fileContent,
