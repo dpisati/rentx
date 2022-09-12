@@ -5,11 +5,13 @@ import uploadConfig from "@config/upload";
 import { ensureAuthenticated } from "@shared/infra/http/middlewares/ensureAuthenticated";
 import { CreateUserController } from "@modules/accounts/useCases/createUser/CreateUserController";
 import { UpdateUserAvatarController } from "@modules/accounts/useCases/updateUserAvatar/updateUserAvatarController";
+import { ProfileUserController } from "@modules/cars/useCases/profileUserUseCase/ProfileUserController";
 
 const usersRoutes = Router();
 
 const createUserController = new CreateUserController();
 const updateUserAvatarController = new UpdateUserAvatarController();
+const profileUserController = new ProfileUserController();
 
 const uploadAvatar = multer(uploadConfig);
 
@@ -21,5 +23,7 @@ usersRoutes.patch(
   uploadAvatar.single("avatar"),
   updateUserAvatarController.handle
 );
+
+usersRoutes.get("/profile", ensureAuthenticated, profileUserController.handle);
 
 export { usersRoutes };
