@@ -4,6 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+tmp/*
+.env
+ormconfig.json
+
+!tmp/.gitkeep
 
 # testing
 /coverage
@@ -14,6 +19,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
