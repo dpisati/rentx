@@ -1,0 +1,26 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.carRoutes = void 0;
+const CreateCarController_1 = require("@modules/cars/useCases/createCar/CreateCarController");
+const express_1 = require("express");
+const ensureAdmin_1 = require("@shared/infra/http/middlewares/ensureAdmin");
+const ensureAuthenticated_1 = require("@shared/infra/http/middlewares/ensureAuthenticated");
+const ListAvailableCarsController_1 = require("@modules/cars/useCases/listAvailableCar/ListAvailableCarsController");
+const CreateCarSpecificationController_1 = require("@modules/cars/useCases/createCarSpecification/CreateCarSpecificationController");
+const UploadCarImagesController_1 = require("@modules/cars/useCases/uploadImage/UploadCarImagesController");
+const multer_1 = __importDefault(require("multer"));
+const upload_1 = __importDefault(require("@config/upload"));
+const carRoutes = (0, express_1.Router)();
+exports.carRoutes = carRoutes;
+const createCarController = new CreateCarController_1.CreateCarController();
+const listAvailableCarsController = new ListAvailableCarsController_1.ListAvailableCarsController();
+const createCarSpecificationController = new CreateCarSpecificationController_1.CreateCarSpecificationController();
+const uploadCarImagesController = new UploadCarImagesController_1.UploadCarImagesController();
+const uploadCarImages = (0, multer_1.default)(upload_1.default);
+carRoutes.post("/", ensureAuthenticated_1.ensureAuthenticated, ensureAdmin_1.ensureAdmin, createCarController.handle);
+carRoutes.get("/available", listAvailableCarsController.handle);
+carRoutes.post("/specifications/:id", ensureAuthenticated_1.ensureAuthenticated, ensureAdmin_1.ensureAdmin, createCarSpecificationController.handle);
+carRoutes.post("/images/:id", ensureAuthenticated_1.ensureAuthenticated, ensureAdmin_1.ensureAdmin, uploadCarImages.array("images"), uploadCarImagesController.handle);
