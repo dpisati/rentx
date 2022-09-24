@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateSpecificationUseCase = void 0;
 
-var _AppError = require("@shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
-var _ISpecificationRepository = require("@modules/cars/repositories/ISpecificationRepository");
+var _ISpecificationRepository = require("../../repositories/ISpecificationRepository");
 
 var _tsyringe = require("tsyringe");
 

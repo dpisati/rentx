@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ListRentalsByUserUseCase = void 0;
 
-var _IRentalsRepository = require("@modules/rentals/repositories/IRentalsRepository");
+var _IRentalsRepository = require("../../repositories/IRentalsRepository");
 
 var _tsyringe = require("tsyringe");
 

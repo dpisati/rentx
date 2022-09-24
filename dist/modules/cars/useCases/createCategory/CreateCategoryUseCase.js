@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateCategoryUseCase = void 0;
 
-var _AppError = require("@shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
-var _ICategoriesRepository = require("@modules/cars/repositories/ICategoriesRepository");
+var _ICategoriesRepository = require("../../repositories/ICategoriesRepository");
 
 var _tsyringe = require("tsyringe");
 

@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.UpdateUserAvatarUseCase = void 0;
 
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
 
-var _IStorageProvider = require("@shared/container/providers/StorageProvider/IStorageProvider");
+var _IStorageProvider = require("../../../../shared/container/providers/StorageProvider/IStorageProvider");
 
 var _tsyringe = require("tsyringe");
 

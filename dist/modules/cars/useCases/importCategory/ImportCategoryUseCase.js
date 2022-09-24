@@ -11,7 +11,7 @@ var _csvParse = require("csv-parse");
 
 var _tsyringe = require("tsyringe");
 
-var _ICategoriesRepository = require("@modules/cars/repositories/ICategoriesRepository");
+var _ICategoriesRepository = require("../../repositories/ICategoriesRepository");
 
 var _dec, _dec2, _dec3, _dec4, _class;
 

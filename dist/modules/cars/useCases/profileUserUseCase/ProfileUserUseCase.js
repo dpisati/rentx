@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ProfileUserUseCase = void 0;
 
-var _UsersRepository = require("@modules/accounts/infra/typeorm/repositories/UsersRepository");
+var _UsersRepository = require("../../../accounts/infra/typeorm/repositories/UsersRepository");
 
-var _UserMap = require("@modules/accounts/mappers/UserMap");
+var _UserMap = require("../../../accounts/mappers/UserMap");
 
 var _tsyringe = require("tsyringe");
 

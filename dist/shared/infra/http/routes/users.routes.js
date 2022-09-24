@@ -9,15 +9,15 @@ var _express = require("express");
 
 var _multer = _interopRequireDefault(require("multer"));
 
-var _upload = _interopRequireDefault(require("@config/upload"));
+var _upload = _interopRequireDefault(require("../../../../config/upload"));
 
-var _ensureAuthenticated = require("@shared/infra/http/middlewares/ensureAuthenticated");
+var _ensureAuthenticated = require("../middlewares/ensureAuthenticated");
 
-var _CreateUserController = require("@modules/accounts/useCases/createUser/CreateUserController");
+var _CreateUserController = require("../../../../modules/accounts/useCases/createUser/CreateUserController");
 
-var _updateUserAvatarController = require("@modules/accounts/useCases/updateUserAvatar/updateUserAvatarController");
+var _updateUserAvatarController = require("../../../../modules/accounts/useCases/updateUserAvatar/updateUserAvatarController");
 
-var _ProfileUserController = require("@modules/cars/useCases/profileUserUseCase/ProfileUserController");
+var _ProfileUserController = require("../../../../modules/cars/useCases/profileUserUseCase/ProfileUserController");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

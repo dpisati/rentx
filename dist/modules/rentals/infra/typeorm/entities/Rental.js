@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Rental = void 0;
 
-var _Car = require("@modules/cars/infra/typeorm/entities/Car");
+var _Car = require("../../../../cars/infra/typeorm/entities/Car");
 
 var _typeorm = require("typeorm");
 

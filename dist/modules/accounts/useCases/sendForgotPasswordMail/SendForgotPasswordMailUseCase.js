@@ -5,15 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SendForgotPasswordMailUseCase = void 0;
 
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
 
-var _IUsersTokensRepository = require("@modules/accounts/repositories/IUsersTokensRepository");
+var _IUsersTokensRepository = require("../../repositories/IUsersTokensRepository");
 
-var _IDateProvider = require("@shared/container/providers/DateProvider/IDateProvider");
+var _IDateProvider = require("../../../../shared/container/providers/DateProvider/IDateProvider");
 
-var _IMailProvider = require("@shared/container/providers/MailProvider/IMailProvider");
+var _IMailProvider = require("../../../../shared/container/providers/MailProvider/IMailProvider");
 
-var _AppError = require("@shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
 var _tsyringe = require("tsyringe");
 

@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateCarSpecificationUseCase = void 0;
 
-var _ICarsRepository = require("@modules/cars/repositories/ICarsRepository");
+var _ICarsRepository = require("../../repositories/ICarsRepository");
 
-var _ISpecificationRepository = require("@modules/cars/repositories/ISpecificationRepository");
+var _ISpecificationRepository = require("../../repositories/ISpecificationRepository");
 
-var _AppError = require("@shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
 var _tsyringe = require("tsyringe");
 

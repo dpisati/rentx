@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.UploadCarImagesUseCase = void 0;
 
-var _ICarsImagesRepository = require("@modules/cars/repositories/ICarsImagesRepository");
+var _ICarsImagesRepository = require("../../repositories/ICarsImagesRepository");
 
-var _IStorageProvider = require("@shared/container/providers/StorageProvider/IStorageProvider");
+var _IStorageProvider = require("../../../../shared/container/providers/StorageProvider/IStorageProvider");
 
 var _tsyringe = require("tsyringe");
 

@@ -1,10 +1,10 @@
 "use strict";
 
-var _app = require("@shared/infra/http/app");
+var _app = require("../../../../shared/infra/http/app");
 
 var _supertest = _interopRequireDefault(require("supertest"));
 
-var _typeorm = _interopRequireDefault(require("@shared/infra/typeorm"));
+var _typeorm = _interopRequireDefault(require("../../../../shared/infra/typeorm"));
 
 var _bcryptjs = require("bcryptjs");
 

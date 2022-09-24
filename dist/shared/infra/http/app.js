@@ -13,17 +13,17 @@ var _routes = require("./routes");
 
 require("dotenv/config");
 
-var _AppError = require("@shared/errors/AppError");
+var _AppError = require("../../errors/AppError");
 
-var _typeorm = _interopRequireDefault(require("@shared/infra/typeorm"));
+var _typeorm = _interopRequireDefault(require("../typeorm"));
 
-require("@shared/container");
+require("../../container");
 
 var _swaggerUiExpress = _interopRequireDefault(require("swagger-ui-express"));
 
 var _swagger = _interopRequireDefault(require("../../../swagger.json"));
 
-var _upload = _interopRequireDefault(require("@config/upload"));
+var _upload = _interopRequireDefault(require("../../../config/upload"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ListSpecificationUseCase = void 0;
 
-var _ISpecificationRepository = require("@modules/cars/repositories/ISpecificationRepository");
+var _ISpecificationRepository = require("../../repositories/ISpecificationRepository");
 
 var _tsyringe = require("tsyringe");
 
