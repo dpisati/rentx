@@ -5,6 +5,7 @@
 /node_modules
 /.pnp
 /dist
+dist
 .pnp.js
 tmp/*
 .env
