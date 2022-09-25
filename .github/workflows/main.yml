@@ -28,47 +28,9 @@ jobs:
       - uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: app
-          port: 22
-          key: -----BEGIN OPENSSH PRIVATE KEY-----
-                b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABCSZLfpPt
-                pm6ritVthgF+jnAAAAEAAAAAEAAAGXAAAAB3NzaC1yc2EAAAADAQABAAABgQDUsbRdKOvm
-                Fc6rabaOCwHv2/Lz7hpcIe90DDtjMn4lXHzWK04M0VuHtMO9B6OL+96frwpSuj4ezrC71H
-                sc1o4/9Y5Lwri4pH6JOUCRtQb6JRMaoNEfm1yRWifAslHz0YnteQypo4ps5MLT8GID5Mup
-                3s8W7NfsdEaH0Qaay7xGBq8YZSKuebsgG9iV1mhBaS6Hvwy6gyo6N9+tty+0kpbTZJAe7A
-                n9HbIJdjXtXKHngE1HyIYO1JhJ2PYvQLHZuH7qIUtNPerL11MhbHyW/QKqpwipQMGY/tpv
-                fHk1g1keOUIfM1Iy+peCUiwA/7uEpGfkzahgxDInx1z80VRcJkF3vd/MtQAoIzI5xcIyom
-                0918qQSaMH3OUZ3gdaljMR09Y9/SyT+zwG6w2WblsN5I9wgBL28GOKkcEUZimFh46/NNQ2
-                6X2BJ+X9ofTMFZnw6bkUyggaIVKtDntjVPrJ9Ggh8qeKuPWF1Csb0L5SQ8s+CiENQrQ5kq
-                hZUBQeokzdFLEAAAWQ8ozebn67QUwo0jOFGU2qO++5VklWqHU0JadRGgoWs6CFpqEX5/fH
-                3N6U/qcIhwrj6Fq38YRY5l1ETRQoU5k3+XrMPddm0nV0r7UcdDALvJS8nxz2zQOXFmOKOl
-                6XYPmMaTWpJ8LKP/y0nmBTNdEJNBgJN+qXF8u88db0q/+ezyxED4dKvSWDBLbVd1yRULPK
-                8AE+Iww3DDZBHI7rYx7JtY7pFdnYm1iK4qcCguE6WCPu3HDP2vPvw55N7js9zMnWunwfud
-                ikatgnz9xn3qJLwnj3JLLZYeQnNwudKUi8doe/psG6huNaLbYRC984Pk4H2RpkVIdr19fM
-                jTlEO7dwnVMRO/jjDsAZAayEA3bj7+fTplol7gWrmI64fgXGNBMnEI7HlrTVRGEGkd8RcK
-                RKTnNG+MSVGUw2fY7hls61QuuIF61WdSfTvAE+8/ySgpNEw1/fQjmwUODvk+TOoV8LZbFe
-                paTdObtZEvdoLZ0jALStD8Yeq3Wr8MgBUoT1uzvTkZ0D8S61TfLiSfAcoL7SZA6cJa+ZGV
-                aRG6QjUR3qplM+BxxtRUJGuvQB5l1gM0xOnJ5LBH9bNXpkClTKrXyJ8UczhEJNLSzObhKa
-                yDr1M0rH4IROGuyHgJ0bQ6DluhrO1HzX2Jvlu3td8OFikdysyuPzrVYpYkNCLhyT01iTlb
-                Dmj0I+Qr2vpnLYhw0mpmE2rHO67Q8lVLtUIGXjDpqJVWs9xtP/CrZJPeKIJojmEnSUVMjb
-                KeNEKWPUAp3ORh8Y0XyVno2kwWTU7PiH1hST3G3DRFw0KAeEBgqzcTy1XS+RSj1ME/wBhW
-                a4Y8jlbMg+Za3u5257X6O7CEauWkMF23dn2/kibNh8xEHBljNTR4ENb1+V4Pfgno2kUA+B
-                LPLwJEFeIB0bgvhLpMJ4O5kjj2eRK5y4lhxKx5cvq+8/nyCNfMJzw8SMEw2MVwZxcYaB59
-                AmwSyjbpWxugy3PuWmWi5+lvcIEOkS99ShpFFX38w5Fssc9IVMBUcR2kumOoT6N8o01ZRS
-                nNdL7OKRvVpDM5NAvSP/7jbEyT3VyrpQeaqTXCMryuaTZcdssEbsWWVSYH8bflmThOu8Rp
-                qGXnhtKeP5687hCuw7ceZO+kOPcdpby2p42qJZaE6uByWXo8F+HY2Jf/4bcL3mriOeE53M
-                y4f1fvic1DOmjca+/sSRBMdEhSfYcx6d7UZnfA5z9af9s+krWwfiDrh0OE4AM//4XoopbE
-                9noC0We0vv7L2YlBvj88HqUZjnIi2y3Iefda05E/5goWElzOrA8VeRYiZEB0d+tkGYbjku
-                EPp/Ttd3vxdwCJBbQKIo/n8HLdEsi0SYGD6fngrEUTtRrxPeUbMN07zu3mKEgl1msvUCT3
-                jhz+0rWEr08GFLJq32rCayuWqJ6XqolzoKMUnqJ4r0nzD/pmXlYAAKlTSZQHKUnh4IfQhZ
-                33X/d2iGMkEBFPERj/Iflh55CLNx06hohBGDJ/N9rDKAiVKq/jGlNVDt626Foh+u3y+OMW
-                +nERSeqnb/liLzLG6YNH8kVzkOgdOUyL7nqXm67eSwxRn5sI1w9j2kQJo0t08AYj4Kfy00
-                njnIaJtMwwfAvTYV5/9HFjRDh2luh8gUAQhxRHKIgCABdpy5cCIZz5mjsI2SEYD71rCns5
-                3O4rSQNF+N77+e+ooRSIyKQBjlrAEk1h3nxR6YvEgfmuDAfsWFs10t89eUoiCqete8u9jD
-                qLVFLN0HvNRRs6CJtKjDm0Jpy7xe8HSm9KHzi/25idjGBBQD/AEiofisoH6KuRW9PyO/fe
-                sb8qpwDMClPixYq16q4EkRM380n+0acrbp27qxAEmbtqildB/kMT6tLpOLBWEzcz84svsH
-                /JuIcn49QT65COec9fxglefMF0c=
-                -----END OPENSSH PRIVATE KEY-----
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_KEY }}
           source: "., !node_modules"
           target: "test"
           
